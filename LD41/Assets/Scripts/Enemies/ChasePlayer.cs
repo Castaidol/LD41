@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChasePlayer : MonoBehaviour {
 
-    public Transform target;
+    private Transform target;
 
     public float speed;
 
@@ -15,6 +15,6 @@ public class ChasePlayer : MonoBehaviour {
 	
 	void Update () 
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 	}
 }
