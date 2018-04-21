@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4266238377617562}
   - component: {fileID: 114056177538816244}
   - component: {fileID: 114351106537562762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RoomGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4440103319566988}
   - component: {fileID: 61073720043801274}
   - component: {fileID: 114748137343820612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Room_T
   m_TagString: Untagged
   m_Icon: {fileID: -6431860639581277017, guid: 0000000000000000d000000000000000, type: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 50577672671339694}
   - component: {fileID: 61549790699669584}
   - component: {fileID: 114460727142503208}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spawner_T
   m_TagString: Spawner
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4106119407975690}
   - component: {fileID: 114761935899702582}
   - component: {fileID: 114552514047311140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RoomGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4452506030284364}
   - component: {fileID: 61108090335251834}
   - component: {fileID: 114945813359727764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StartingRoom
   m_TagString: Untagged
   m_Icon: {fileID: -982381405332843317, guid: 0000000000000000d000000000000000, type: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 50214169065861092}
   - component: {fileID: 61833854624887402}
   - component: {fileID: 114528831941340452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spawner_R
   m_TagString: Spawner
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 50807887545255934}
   - component: {fileID: 61017462361166708}
   - component: {fileID: 114967045896938352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Destroyer
   m_TagString: Spawner
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 50021034902404738}
   - component: {fileID: 61178072751895050}
   - component: {fileID: 114501747308128044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spawner_B
   m_TagString: Spawner
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 50630571238345994}
   - component: {fileID: 61970534600398248}
   - component: {fileID: 114140949145229936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spawner_T
   m_TagString: Spawner
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 50031814044816238}
   - component: {fileID: 61941744051232890}
   - component: {fileID: 114463481930682690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spawner_L
   m_TagString: Spawner
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
