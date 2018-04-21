@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
-
+    [HideInInspector]
     public Transform parentToReturn = null;
     GameObject placeHolder = null;
 

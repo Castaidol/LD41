@@ -5,15 +5,41 @@ using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler {
 
-    public void OnDrop(PointerEventData eventData)
-    {
-        Debug.Log(eventData.pointerDrag.name + "was drop on");
+    private bool canDrop = true;
 
-        Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
-        if(d != null)
+	private void Start()
+	{
+	}
+
+	public void OnDrop(PointerEventData eventData)
+    {
+        if(canDrop)
         {
-            d.parentToReturn = this.transform;
+            Debug.Log(eventData.pointerDrag.name + "was drop on");
+
+            Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
+            if (d != null)
+            {
+                d.parentToReturn = this.transform;
+                canDrop = false;
+
+                StartCoroutine(DestroyCard(eventData.pointerDrag));
+            } 
+        }else
+        {
+            return;
         }
+
+    }
+
+    IEnumerator DestroyCard(GameObject card)
+    {
+        card.GetComponent<BurstAttack>().burst = true;
+       
+        yield return new WaitForSeconds(5f);
+
+        Destroy(card);
+        canDrop = true;
     }
 
 }
