@@ -5,14 +5,19 @@ using UnityEngine;
 public class WallGenerator : MonoBehaviour 
 {
     public Texture2D map;
-
     public ColorToPrefab[] colorMappings;
+
+    public Transform parentTrasform;
 
     private float offsetX = 15.5f;
     private float offsetY = 8.5f;
+    private float totalOffsetX;
+    private float totalOffsetY;
 
 	void Start () 
     {
+        totalOffsetX = parentTrasform.position.x - offsetX;
+        totalOffsetY = parentTrasform.position.y - offsetY;
         GenerateRoom();
 	}
 	
@@ -40,7 +45,7 @@ public class WallGenerator : MonoBehaviour
         {
             if(colorMapping.color.Equals(pixelColor))
             {
-                Vector2 position = new Vector2(x - offsetX, y - offsetY);
+                Vector2 position = new Vector2(x + totalOffsetX, y + totalOffsetY);
                 Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
             }
         }

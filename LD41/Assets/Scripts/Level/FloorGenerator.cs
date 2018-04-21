@@ -7,11 +7,17 @@ public class FloorGenerator : MonoBehaviour {
 
     public ColorToPrefab[] colorMappings;
 
+    public Transform parentTrasform;
+
     private float offsetX = 14.5f;
     private float offsetY = 7.5f;
+    private float totalOffsetX;
+    private float totalOffsetY;
 
     void Start()
     {
+        totalOffsetX = parentTrasform.position.x - offsetX;
+        totalOffsetY = parentTrasform.position.y - offsetY;
         GenerateRoom();
     }
 
@@ -39,7 +45,7 @@ public class FloorGenerator : MonoBehaviour {
         {
             if (colorMapping.color.Equals(pixelColor))
             {
-                Vector2 position = new Vector2(x - offsetX, y - offsetY);
+                Vector2 position = new Vector2(x + totalOffsetX, y + totalOffsetY);
                 Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
             }
         }
