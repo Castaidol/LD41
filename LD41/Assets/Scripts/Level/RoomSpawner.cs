@@ -56,7 +56,7 @@ public class RoomSpawner : MonoBehaviour {
         {
             if(collision.GetComponent<RoomSpawner>().spawned == false && spawned == false)
             {
-                Instantiate(roomTemplate.closedRoom, transform.position, Quaternion.identity);
+                //Instantiate(roomTemplate.closedRoom, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
             spawned = true;

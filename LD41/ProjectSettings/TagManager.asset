@@ -7,6 +7,11 @@ TagManager:
   - Spawner
   - Rooms
   - Wall
+  - DropZone
+  - Hand_Attack
+  - Deck
+  - Obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX

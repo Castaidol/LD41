@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FloorGenerator : MonoBehaviour {
-    public Texture2D map;
+
+    public Texture2D[] maps;
 
     public ColorToPrefab[] colorMappings;
 
     public Transform parentTrasform;
 
+    private Texture2D map;
     private float offsetX = 14.5f;
     private float offsetY = 7.5f;
     private float totalOffsetX;
@@ -16,6 +18,8 @@ public class FloorGenerator : MonoBehaviour {
 
     void Start()
     {
+        map = maps[Random.Range(0, maps.Length)];
+
         totalOffsetX = parentTrasform.position.x - offsetX;
         totalOffsetY = parentTrasform.position.y - offsetY;
         GenerateRoom();

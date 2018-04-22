@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4857206799411804}
   - component: {fileID: 212917551084514838}
   - component: {fileID: 61424967426698030}
+  - component: {fileID: 114975053372169456}
   m_Layer: 0
   m_Name: Walls_H_B
   m_TagString: Wall
@@ -36,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1379076816644000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24, y: 2.13, z: 0}
-  m_LocalScale: {x: 1, y: -1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,6 +67,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.875}
   m_EdgeRadius: 0
+--- !u!114 &114975053372169456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1379076816644000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13d637eb25fb4bcc83b85dcba26903a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300012, guid: 5505bcadb4bbf402283b5a587975e539, type: 3}
+  - {fileID: 21300014, guid: 5505bcadb4bbf402283b5a587975e539, type: 3}
+  - {fileID: 21300016, guid: 5505bcadb4bbf402283b5a587975e539, type: 3}
+  sprite: {fileID: 212917551084514838}
 --- !u!212 &212917551084514838
 SpriteRenderer:
   m_ObjectHideFlags: 1
